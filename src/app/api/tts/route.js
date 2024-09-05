@@ -5,9 +5,9 @@ export async function POST(req) {
   const { text } = await req.json();
 
   const data = new FormData();
-  data.append('voice_code', 'en-US-1');
+  data.append('voice_code', 'hi-IN-1');
   data.append('text', text);
-  data.append('speed', '1.00');
+  data.append('speed', '1');
   data.append('pitch', '1.00');
   data.append('output_type', 'audio_url');
 
